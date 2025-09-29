@@ -1,0 +1,28 @@
+﻿{
+    "name":  "reeutil",
+    "version":  "1.0.0",
+    "main":  "index.js",
+    "scripts":  {
+                    "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
+                    "dev:gateway":  "pnpm --filter ./apps/gateway dev",
+                    "dev:registry":  "pnpm --filter ./services/registry-svc dev",
+                    "dev:quote":  "pnpm --filter ./services/quote-svc dev",
+                    "dev:shipment":  "pnpm --filter ./services/shipment-svc dev",
+                    "dev:inspection":  "pnpm --filter ./services/inspection-svc dev",
+                    "dev:payout":  "pnpm --filter ./services/payout-svc dev",
+                    "dev:notify":  "pnpm --filter ./services/notify-svc dev",
+                    "dev:web":  "pnpm --filter ./apps/web dev",
+                    "dev:all":  "concurrently -k \"pnpm dev:gateway\" \"pnpm dev:registry\" \"pnpm dev:quote\" \"pnpm dev:shipment\" \"pnpm dev:inspection\" \"pnpm dev:payout\" \"pnpm dev:notify\" \"pnpm dev:web\"",
+                    "dev:auth":  "pnpm --filter ./services/auth-svc dev",
+                    "dev":  "ts-node-dev --respawn src/app.ts"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "description":  "",
+    "devDependencies":  {
+                            "concurrently":  "^9.2.1"
+                        }
+}

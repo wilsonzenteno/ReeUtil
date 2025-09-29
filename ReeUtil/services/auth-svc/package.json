@@ -1,0 +1,7 @@
+{
+  "name": "auth-svc",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/app.ts"
+  }
+}
