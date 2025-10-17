@@ -1,0 +1,27 @@
+{
+  "name": "quote-svc",
+  "version": "1.0.0",
+  "description": "Servicio de cotizaciones (precios) usando json-logic-js",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/app.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "json-logic-js": "^2.0.5",
+    "mongodb": "^6.20.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/json-logic-js": "^2.0.8",
+    "@types/node": "^24.5.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "~5.8.3"
+  }
+}

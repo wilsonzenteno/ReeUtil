@@ -1,0 +1,21 @@
+{
+  "name": "auth-svc",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/app.ts"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/mongodb": "^4.0.7",
+    "@types/node": "^24.5.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jose": "^6.1.0",
+    "mongodb": "^6.20.0"
+  }
+}
