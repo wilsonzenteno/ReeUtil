@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer components {
+  /* Botones */
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition
+           bg-black text-white hover:bg-gray-900;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition
+           border bg-white hover:bg-gray-50;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition
+           border border-slate-600/40 bg-slate-800 text-white hover:bg-slate-700;
+  }
+
+  /* Tarjetas */
+  .card { @apply rounded-xl border bg-white p-4; }
+  .card-hover { @apply transition hover:shadow; }
+
+  /* Glass y KPI (sin reusar clases en @apply) */
+  .glass {
+    @apply rounded-xl border border-white/15 bg-white/10 backdrop-blur;
+  }
+  .kpi {
+    @apply rounded-xl border border-white/15 bg-white/10 backdrop-blur px-5 py-4;
+  }
+
+  /* Chips de estado */
+  .chip-ok {
+    @apply rounded-full border px-2 py-1 text-xs bg-green-50 text-green-700 border-green-200;
+  }
+  .chip-bad {
+    @apply rounded-full border px-2 py-1 text-xs bg-red-50 text-red-700 border-red-200;
+  }
+
+  /* Inputs */
+  .field {
+    @apply w-72 rounded-lg border bg-white pl-8 pr-3 py-2 text-sm outline-none ring-0 focus:border-slate-400;
+  }
+}
+
+/* Fondos decorativos */
+.bg-hero-gradient {
+  background-image:
+    radial-gradient(1200px 600px at -10% -20%, rgba(56,189,248,.18), transparent 60%),
+    radial-gradient(1000px 800px at 120% -10%, rgba(139,92,246,.18), transparent 60%),
+    linear-gradient(135deg, #0f172a, #0b1225 60%, #0f172a);
+}
+.bg-dots {
+  background-size: 24px 24px;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.06) 1px, transparent 1px);
+  background-position: 0 0, 12px 12px;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "reeutil",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev:gateway": "pnpm --filter gateway dev",
+  "dev:registry": "pnpm --filter registry-svc dev",
+  "dev:quote": "pnpm --filter quote-svc dev",
+  "dev:shipment": "pnpm --filter shipment-svc dev",
+  "dev:inspection": "pnpm --filter inspection-svc dev",
+  "dev:payout": "pnpm --filter payout-svc dev",
+  "dev:notify": "pnpm --filter notify-svc dev",
+  "dev:web": "pnpm --filter web dev",
+  "dev:auth": "pnpm --filter auth-svc dev",
+  "dev:all": "concurrently -k \"pnpm dev:gateway\" \"pnpm dev:registry\" \"pnpm dev:quote\" \"pnpm dev:shipment\" \"pnpm dev:inspection\" \"pnpm dev:payout\" \"pnpm dev:notify\" \"pnpm dev:web\" \"pnpm dev:auth\""
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "concurrently": "^9.2.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "react-qr-code": "^2.0.18"
+  }
+}
